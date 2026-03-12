@@ -75,6 +75,7 @@ last_resolve_page = None
 # Helpers
 # -----------------------------
 
+# Získá název a PID aktuálně aktivního okna. Pokud není žádné, vrátí prázdné hodnoty.
 
 def get_foreground_window_info():
     hwnd = GetForegroundWindow()
