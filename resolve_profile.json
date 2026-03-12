@@ -1,0 +1,68 @@
+{
+  "profile_id": "resolve",
+  "default_page": "edit",
+  "pages": [
+    {
+      "page_id": "edit",
+      "title": "Resolve · Edit",
+      "buttons": [
+        { "slot": 0, "label": "Cut",    "action": "cut" },
+        { "slot": 1, "label": "Ripple", "action": "ripple_delete" },
+        { "slot": 2, "label": "Marker", "action": "add_marker" },
+        { "slot": 3, "label": "Undo",   "action": "undo" },
+        { "slot": 4, "label": "Redo",   "action": "redo" },
+        { "slot": 5, "label": "Play",   "action": "play_pause" }
+      ]
+    },
+    {
+      "page_id": "color",
+      "title": "Resolve · Color",
+      "buttons": [
+        { "slot": 0, "label": "Still",  "action": "grab_still" },
+        { "slot": 1, "label": "Bypass", "action": "bypass_color" },
+        { "slot": 2, "label": "Node +", "action": "next_node" },
+        { "slot": 3, "label": "Node -", "action": "prev_node" },
+        { "slot": 4, "label": "Undo",   "action": "undo" },
+        { "slot": 5, "label": "Play",   "action": "play_pause" }
+      ]
+    },
+    {
+      "page_id": "audio",
+      "title": "Resolve · Fairlight",
+      "buttons": [
+        { "slot": 0, "label": "Play",   "action": "play_pause" },
+        { "slot": 1, "label": "Marker", "action": "add_marker" },
+        { "slot": 2, "label": "Undo",   "action": "undo" },
+        { "slot": 3, "label": "Redo",   "action": "redo" },
+        { "slot": 4, "label": "Cut",    "action": "cut" },
+        { "slot": 5, "label": "Ripple", "action": "ripple_delete" }
+      ]
+    },
+    {
+      "page_id": "deliver",
+      "title": "Resolve · Deliver",
+      "buttons": [
+        { "slot": 0, "label": "Save",   "action": "save" },
+        { "slot": 1, "label": "Undo",   "action": "undo" },
+        { "slot": 2, "label": "Redo",   "action": "redo" },
+        { "slot": 3, "label": "Play",   "action": "play_pause" },
+        { "slot": 4, "label": "Marker", "action": "add_marker" },
+        { "slot": 5, "label": "Cut",    "action": "cut" }
+      ]
+    }
+  ],
+  "actions": [
+    { "action_id": "cut", "type": "shortcut", "keys": ["ctrl", "b"] },
+    { "action_id": "ripple_delete", "type": "shortcut", "keys": ["delete"] },
+    { "action_id": "add_marker", "type": "shortcut", "keys": ["m"] },
+    { "action_id": "undo", "type": "shortcut", "keys": ["ctrl", "z"] },
+    { "action_id": "redo", "type": "shortcut", "keys": ["ctrl", "shift", "z"] },
+    { "action_id": "play_pause", "type": "shortcut", "keys": ["space"] },
+    { "action_id": "save", "type": "shortcut", "keys": ["ctrl", "s"] },
+
+    { "action_id": "grab_still", "type": "shortcut", "keys": ["ctrl", "g"] },
+    { "action_id": "bypass_color", "type": "shortcut", "keys": ["ctrl", "d"] },
+    { "action_id": "next_node", "type": "shortcut", "keys": ["alt", "shift", "'"] },
+    { "action_id": "prev_node", "type": "shortcut", "keys": ["alt", "shift", ";"] }
+  ]
+}
